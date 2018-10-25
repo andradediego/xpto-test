@@ -1,0 +1,14 @@
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\bin\Debug\Xpto.Data.dll.config
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\bin\Debug\Xpto.Data.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\bin\Debug\Xpto.Data.pdb
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\bin\Debug\EntityFramework.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\bin\Debug\EntityFramework.xml
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\obj\Debug\Xpto.Data.csprojAssemblyReference.cache
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\obj\Debug\Xpto.Data.csproj.CoreCompileInputs.cache
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\obj\Debug\Xpto.Data.csproj.CopyComplete
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\obj\Debug\Xpto.Data.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\obj\Debug\Xpto.Data.pdb
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\obj\Debug\Xpto.Data.Migrations.init.resources
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Data\obj\Debug\Xpto.Data.csproj.GenerateResource.cache

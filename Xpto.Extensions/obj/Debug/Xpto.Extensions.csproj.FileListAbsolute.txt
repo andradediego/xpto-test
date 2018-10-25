@@ -1,0 +1,6 @@
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Extensions\bin\Debug\Xpto.Extensions.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Extensions\bin\Debug\Xpto.Extensions.pdb
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Extensions\obj\Debug\Xpto.Extensions.csprojAssemblyReference.cache
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Extensions\obj\Debug\Xpto.Extensions.csproj.CoreCompileInputs.cache
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Extensions\obj\Debug\Xpto.Extensions.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Extensions\obj\Debug\Xpto.Extensions.pdb

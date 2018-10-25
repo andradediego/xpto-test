@@ -1,0 +1,17 @@
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\obj\Debug\Xpto.Repository.csprojAssemblyReference.cache
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\obj\Debug\Xpto.Repository.csproj.CoreCompileInputs.cache
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\Xpto.Repository.dll.config
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\Xpto.Repository.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\Xpto.Repository.pdb
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\EntityFramework.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\Xpto.Data.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\Xpto.Extensions.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\Xpto.Data.pdb
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\Xpto.Data.dll.config
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\Xpto.Extensions.pdb
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\EntityFramework.xml
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\obj\Debug\Xpto.Repository.csproj.CopyComplete
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\obj\Debug\Xpto.Repository.dll
+D:\TesteStefanini\Xpto\XptoWeb\Xpto.Repository\obj\Debug\Xpto.Repository.pdb

@@ -1,0 +1,143 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="app">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ref="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Conteúdo Arquivo</h4>
+                </div>
+                <div class="modal-body" ref="conteudoArquivo">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" v-on:click.prevent="salvarClientes">Salvar Clientes</button>
+                    <button type="button" class="btn btn-primary" v-on:click.prevent="salvarProdutosClientes">Salvar Produtos Clientes</button>
+                    <button type="button" class="btn btn-primary" v-on:click.prevent="salvarProdutos">Salvar Produtos</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile" ref="exampleInputFile">
+                <button id="uploadArquivo" class="btn btn-default" v-on:click="uploadFile">Adicionar Dados</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    message: "Olá vue"
+                }
+            },
+            methods: {
+                uploadFile: function () {
+                    var files = this.$refs.exampleInputFile.files;
+                    var fileData = new FormData();
+
+                    
+                    for (var i = 0; i < files.length; i++) {
+                        fileData.append(files[i].name, files[i]);
+                    }
+
+                    var divModal = this.$refs.conteudoArquivo;
+
+                    $.ajax({
+                        url: '/Home/Upload',
+                        type: "POST",
+                        contentType: false,
+                        processData: false,
+                        data: fileData,
+                        success: function (result) {
+                            divModal.innerHTML = result;
+                            $('#myModal').modal('show')
+                        },
+                        error: function (err) {
+                            alert(err.statusText);
+                        }
+                    });
+                },
+                salvarClientes: function () {
+                    var texto = this.$refs.conteudoArquivo.innerHTML;
+                    var dados = {
+                        conteudo: texto
+                    }
+
+                    this.postDados('/Cliente/SalvarClienteArquivo', dados);
+                },
+                salvarProdutosClientes: function () {
+                    var texto = this.$refs.conteudoArquivo.innerHTML;
+                    var dados = {
+                        conteudo: texto
+                    }
+
+                    this.postDados('/Cliente/SalvarProdutosClienteArquivo', dados);
+                },
+                salvarProdutos: function () {
+                    var texto = this.$refs.conteudoArquivo.innerHTML; var texto = this.$refs.conteudoArquivo.innerHTML;
+                    var dados = {
+                        Conteudo: texto
+                    }
+
+                    this.postDados('/Produto/SalvarProdutoArquivo', dados);
+                },
+                postDados: function (endereco, dados) {
+                    console.log(JSON.stringify(dados))
+                    $.ajax({
+                        url: endereco,
+                        type: "POST",
+                        data: JSON.stringify(dados),
+                        contentType: 'application/json',
+                        dataType: 'json',
+                        success: function (result) {
+                            $('#myModal').modal('hide');
+                        },
+                        error: function (err) {
+                            alert(err.statusText);
+                        }
+                    });
+                }
+            }
+        })
+    </script>
+}
