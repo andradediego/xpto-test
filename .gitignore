@@ -8,6 +8,11 @@
 /packages
 /.vs
 
+/Xpto.Data/bin
+/Xpto.Data/bin
+/Xpto.Repository/bin
+/XptoWeb/bin
+
 # dependencies
 /node_modules
 
